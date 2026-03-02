@@ -1,7 +1,5 @@
-import { BrowserRouter } from "react-router-dom";
 import { useEffect } from "react";
 import { useAppSelector } from "./app/hooks";
-import AppRoutes from "./routes/AppRoutes";
 
 export default function App() {
   const { mode, accent } = useAppSelector((s) => s.theme);

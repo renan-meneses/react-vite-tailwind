@@ -1,9 +1,6 @@
 import { useState } from "react";
 import { useCreateUserMutation } from "../../api/userApi";
 import { useNavigate } from "react-router-dom";
-import Input from "../../components/ui/Input";
-import Select from "../../components/ui/Select";
-import Button from "../../components/ui/Button";
 
 export default function UserCreate() {
   const [form, setForm] = useState({ name: "", email: "", role: "user" });

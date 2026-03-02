@@ -1,7 +1,6 @@
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { logout } from "../../features/auth/authSlice";
 import { useNavigate } from "react-router-dom";
-import ThemeSwitcher from "../common/ThemeSwitcher";
 
 export default function Header({ onMenuClick }) {
   const dispatch = useAppDispatch();

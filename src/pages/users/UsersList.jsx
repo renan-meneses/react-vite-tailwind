@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useDeleteUserMutation, useGetUsersQuery } from "../../api/userApi";
-import ConfirmDialog from "../../components/common/ConfirmDialog";
 
 export default function UsersList() {
   const { data = [], isLoading } = useGetUsersQuery();

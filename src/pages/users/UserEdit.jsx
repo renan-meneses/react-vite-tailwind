@@ -1,9 +1,6 @@
 import { useState, useEffect } from "react";
 import { useUpdateUserMutation, useGetUserQuery } from "../../api/userApi";
 import { useNavigate, useParams } from "react-router-dom";
-import Input from "../../components/ui/Input";
-import Select from "../../components/ui/Select";
-import Button from "../../components/ui/Button";
 
 export default function UserEdit() {
   const { id } = useParams();
