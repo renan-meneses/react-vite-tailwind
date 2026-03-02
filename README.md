@@ -1,35 +1,37 @@
 # React Admin
 
 Um kit inicial moderno e pronto para produção de dashboard administrativo em React, construído com Vite, Redux Toolkit, React Router e Tailwind CSS v4. Este projeto fornece uma base sólida para construir painéis administrativos, dashboards ou qualquer aplicação web autenticada.
-Projeto baseado  no [Building a Modern Admin Dashboard with React JS and Tailwind CSS](https://www.youtube.com/watch?v=xsqwRN8w_MU)
+Projeto baseado no [Building a Modern Admin Dashboard with React JS and Tailwind CSS](https://www.youtube.com/watch?v=xsqwRN8w_MU)
 
 ## ✨ Funcionalidades
 
-* **Stack Moderna**: React 19, Vite, Redux Toolkit, React Router v7
-* **Interface Elegante**: Tailwind CSS v4 com sistema de tema personalizado
-* **Modo Escuro**: Suporte completo a modo claro/escuro com transições suaves
-* **Customização de Tema**: Múltiplas cores de destaque (Blue, Emerald, Violet)
-* **Autenticação**: Fluxo completo de autenticação com rotas protegidas
-* **Design Responsivo**: Layout mobile-first com navegação por sidebar
-* **Integração com API**: RTK Query para busca eficiente de dados
-* **Mock Service Worker**: Mock de API para desenvolvimento
-* **Arquitetura Modular**: Estrutura de pastas baseada em features
-* **Acessível**: Construído seguindo boas práticas de acessibilidade
-* **Gerenciamento de Estado**: Redux Toolkit com persistência
+- **Stack Moderna**: React 19, Vite, Redux Toolkit, React Router v7
+- **Interface Elegante**: Tailwind CSS v4 com sistema de tema personalizado
+- **Modo Escuro**: Suporte completo a modo claro/escuro com transições suaves
+- **Customização de Tema**: Múltiplas cores de destaque (Blue, Emerald, Violet)
+- **Autenticação**: Fluxo completo de autenticação com rotas protegidas
+- **Design Responsivo**: Layout mobile-first com navegação por sidebar
+- **Integração com API**: RTK Query para busca eficiente de dados
+- **Mock Service Worker**: Mock de API para desenvolvimento
+- **Arquitetura Modular**: Estrutura de pastas baseada em features
+- **Acessível**: Construído seguindo boas práticas de acessibilidade
+- **Gerenciamento de Estado**: Redux Toolkit com persistência
+
 ---
 
 ## 🛠️ Stack Tecnológica
 
-* **React 19** – Biblioteca de UI
-* **Vite** – Ferramenta de build e servidor de desenvolvimento
-* **Redux Toolkit** – Gerenciamento de estado
-* **RTK Query** – Busca e cache de dados
-* **React Router v7** – Roteamento
-* **Tailwind CSS v4** – Estilização
-* **MSW (Mock Service Worker)** – Mock de API
-* **PostCSS** – Processamento de CSS
-* **Yarn** - gerenciador de pacotes
-* **Husk** - gerenciador de commits
+- **React 19** – Biblioteca de UI
+- **Vite** – Ferramenta de build e servidor de desenvolvimento
+- **Redux Toolkit** – Gerenciamento de estado
+- **RTK Query** – Busca e cache de dados
+- **React Router v7** – Roteamento
+- **git CSS v4** – Estilização
+- **MSW (Mock Service Worker)** – Mock de API
+- **PostCSS** – Processamento de CSS
+- **Yarn** - gerenciador de pacotes
+- **Husk** - gerenciador de commits
+
 ---
 
 ## 📁 Estrutura do Projeto
@@ -78,13 +80,14 @@ src/
 ├── main.jsx                # Ponto de entrada
 └── index.css               # Estilos globais e imports do Tailwind
 ```
+
 ---
 
 ## 🚀 Como Começar
 
 ### Pré-requisitos
 
-* Node.js 22+ e npm
+- Node.js 22+ e npm
 
 ### Instalação
 
@@ -102,21 +105,19 @@ npm run dev
 ```
 
 4. **Abra o navegador**
-
-   * Acesse `http://localhost:5173`
-   * Credenciais padrão (via MSW):
-
-     * Email: `admin@example.com`
-     * Senha: `password`
+   - Acesse `http://localhost:5173`
+   - Credenciais padrão (via MSW):
+     - Email: `admin@example.com`
+     - Senha: `password`
 
 ---
 
 ## 📜 Scripts Disponíveis
 
-* `npm run dev` – Inicia o servidor de desenvolvimento
-* `npm run build` – Gera build para produção
-* `npm run preview` – Visualiza build de produção
-* `npm run lint` – Executa ESLint
+- `npm run dev` – Inicia o servidor de desenvolvimento
+- `npm run build` – Gera build para produção
+- `npm run preview` – Visualiza build de produção
+- `npm run lint` – Executa ESLint
 
 ---
 
@@ -128,36 +129,36 @@ O projeto segue uma **arquitetura baseada em funcionalidades**, onde o código r
 
 Cada feature contém:
 
-* **Slice** – Gerenciamento de estado (`*Slice.js`)
-* **Selectors** – Selectors memorizados (`*Selectors.js`)
-* **API** – Endpoints RTK Query (`api/`)
-* **Components** – Componentes específicos da feature
-* **Pages** – Páginas da feature (`pages/`)
+- **Slice** – Gerenciamento de estado (`*Slice.js`)
+- **Selectors** – Selectors memorizados (`*Selectors.js`)
+- **API** – Endpoints RTK Query (`api/`)
+- **Components** – Componentes específicos da feature
+- **Pages** – Páginas da feature (`pages/`)
 
 ---
 
 ### Gerenciamento de Estado
 
-* **Redux Toolkit** – Estado centralizado
-* **RTK Query** – Chamadas de API, cache e sincronização
-* **LocalStorage** – Persistência de autenticação e preferências de tema
+- **Redux Toolkit** – Estado centralizado
+- **RTK Query** – Chamadas de API, cache e sincronização
+- **LocalStorage** – Persistência de autenticação e preferências de tema
 
 ---
 
 ### Roteamento
 
-* **Rotas Públicas** – Login, Register
-* **Rotas Privadas** – Dashboard, Users
-* **Rotas com Layout** – DashboardLayout envolve rotas privadas
+- **Rotas Públicas** – Login, Register
+- **Rotas Privadas** – Dashboard, Users
+- **Rotas com Layout** – DashboardLayout envolve rotas privadas
 
 ---
 
 ### Estilização
 
-* **Tailwind CSS v4**
-* **Variáveis CSS** para temas dinâmicos
-* **Modo Escuro** com prefixo `dark:`
-* **Responsividade mobile-first** (sm, md, lg)
+- **Tailwind CSS v4**
+- **Variáveis CSS** para temas dinâmicos
+- **Modo Escuro** com prefixo `dark:`
+- **Responsividade mobile-first** (sm, md, lg)
 
 ---
 
@@ -169,9 +170,9 @@ Implementado com variante `dark:` do Tailwind. A preferência é salva no localS
 
 ### Cores de Destaque
 
-* **Blue** (padrão)
-* **Emerald**
-* **Violet**
+- **Blue** (padrão)
+- **Emerald**
+- **Violet**
 
 ### Customização
 
@@ -206,8 +207,8 @@ Endpoints definidos com RTK Query em `api/`.
 
 Para usar API real:
 
-* Atualizar `baseUrl` em `src/api/baseApi.js`
-* Remover MSW em produção
+- Atualizar `baseUrl` em `src/api/baseApi.js`
+- Remover MSW em produção
 
 ---
 
@@ -235,10 +236,10 @@ import { useAppDispatch, useAppSelector } from "./app/hooks";
 
 ## 🔧 Arquivos de Configuração
 
-* `vite.config.js`
-* `tailwind.config.js`
-* `postcss.config.js`
-* `eslint.config.js`
+- `vite.config.js`
+- `tailwind.config.js`
+- `postcss.config.js`
+- `eslint.config.js`
 
 ---
 
@@ -256,10 +257,10 @@ O build será gerado na pasta `dist/`.
 
 Este é um template inicial. Sinta-se livre para:
 
-* Clonar
-* Customizar
-* Adicionar features
-* Compartilhar melhorias
+- Clonar
+- Customizar
+- Adicionar features
+- Compartilhar melhorias
 
 ---
 
@@ -272,7 +273,5 @@ Desenvolvido e mantido por [@renan-meneses](https://github.com/renan-meneses)
 ## 📝 Licença
 
 Projeto open source sob licença **MIT**.
-
-
 
 **Bom código! 🚀**

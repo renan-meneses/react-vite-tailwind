@@ -1,15 +1,15 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { loadJSON, saveJSON } from '../../utils/storage';
+import { createSlice } from "@reduxjs/toolkit";
+import { loadJSON, saveJSON } from "../../utils/storage";
 
-const KEY = 'theme';
-const initial = loadJSON(KEY) ?? { mode: 'light', accent: 'blue' };
+const KEY = "theme";
+const initial = loadJSON(KEY) ?? { mode: "light", accent: "blue" };
 
 const slice = createSlice({
-  name: 'theme',
+  name: "theme",
   initialState: initial,
   reducers: {
     toggleMode(state) {
-      state.mode = state.mode === 'dark' ? 'light' : 'dark';
+      state.mode = state.mode === "dark" ? "light" : "dark";
       saveJSON(KEY, state);
     },
     setAccent(state, { payload }) {
@@ -21,4 +21,3 @@ const slice = createSlice({
 
 export const { toggleMode, setAccent } = slice.actions;
 export default slice.reducer;
-

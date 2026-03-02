@@ -1,4 +1,4 @@
-export default function Select({ label, className = '', ...props }) {
+export default function Select({ label, className = "", ...props }) {
   return (
     <div className="space-y-1.5">
       {label && (
@@ -13,4 +13,3 @@ export default function Select({ label, className = '', ...props }) {
     </div>
   );
 }
-

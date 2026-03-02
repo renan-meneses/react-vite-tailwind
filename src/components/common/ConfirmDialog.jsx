@@ -1,13 +1,24 @@
-export default function ConfirmDialog({ isOpen, onClose, onConfirm, title = 'Confirm', message = 'Are you sure?' }) {
+export default function ConfirmDialog({
+  isOpen,
+  onClose,
+  onConfirm,
+  title = "Confirm",
+  message = "Are you sure?",
+}) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={onClose}>
+    <div
+      className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+      onClick={onClose}
+    >
       <div
         className="bg-white dark:bg-neutral-800 rounded-lg p-6 max-w-md w-full mx-4 shadow-xl"
         onClick={(e) => e.stopPropagation()}
       >
-        <h3 className="text-lg font-semibold mb-2 text-neutral-900 dark:text-neutral-100">{title}</h3>
+        <h3 className="text-lg font-semibold mb-2 text-neutral-900 dark:text-neutral-100">
+          {title}
+        </h3>
         <p className="mb-6 text-neutral-600 dark:text-neutral-400">{message}</p>
         <div className="flex justify-end gap-2">
           <button
@@ -27,4 +38,3 @@ export default function ConfirmDialog({ isOpen, onClose, onConfirm, title = 'Con
     </div>
   );
 }
-

@@ -1,11 +1,11 @@
-import { createSlice } from '@reduxjs/toolkit';
-import { saveJSON, loadJSON, remove } from '../../utils/storage';
+import { createSlice } from "@reduxjs/toolkit";
+import { saveJSON, loadJSON, remove } from "../../utils/storage";
 
-const KEY = 'auth';
+const KEY = "auth";
 const initial = loadJSON(KEY) ?? { token: null, user: null };
 
 const slice = createSlice({
-  name: 'auth',
+  name: "auth",
   initialState: initial,
   reducers: {
     setCredentials(state, { payload }) {
@@ -23,4 +23,3 @@ const slice = createSlice({
 
 export const { setCredentials, logout } = slice.actions;
 export default slice.reducer;
-

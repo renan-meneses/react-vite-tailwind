@@ -8,18 +8,18 @@ import { loadJSON } from "./utils/storage";
 
 // Apply theme immediately before React renders to prevent flash
 function applyInitialTheme() {
-  const theme = loadJSON('theme') ?? { mode: 'light', accent: 'blue' };
+  const theme = loadJSON("theme") ?? { mode: "light", accent: "blue" };
   const root = document.documentElement;
-  
+
   // Apply dark mode class
-  if (theme.mode === 'dark') {
-    root.classList.add('dark');
+  if (theme.mode === "dark") {
+    root.classList.add("dark");
   } else {
-    root.classList.remove('dark');
+    root.classList.remove("dark");
   }
-  
+
   // Apply accent color
-  root.setAttribute('data-accent', theme.accent === 'blue' ? '' : theme.accent);
+  root.setAttribute("data-accent", theme.accent === "blue" ? "" : theme.accent);
 }
 
 // Apply theme synchronously before React renders
@@ -43,11 +43,11 @@ async function initApp() {
   } catch (err) {
     console.warn("MSW initialization failed, continuing without mocks:", err);
   }
-  
+
   ReactDOM.createRoot(document.getElementById("root")).render(
     <Provider store={store}>
       <App />
-    </Provider>
+    </Provider>,
   );
 }
 
